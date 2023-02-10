@@ -390,3 +390,113 @@ body{
 .My-Work-Experince{
     transition: .4s linear;
 }
+
+/* <!--################################## { Marketing-Gig } ############################### --> */
+.Marketing-Gig {
+    margin-top: -5%;
+    display: flex;
+    padding-top: 3%;
+}
+
+/* .-------------------------------{ Marketing-Gig--Box-Anemation } */
+.box{
+    left: 2%;
+    right: 2%;
+    display: flex;
+    position: relative;
+    width: 30%;
+    height: 420px;
+    background: #1c1c1c;
+    border: 8px;
+    overflow: hidden;
+    margin: 1%;
+}
+.box::before{
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #45f3ff , #45f3ff);
+    transform-origin: bottom left;
+    animation: animate 6s linear infinite;
+}
+.box::after{
+    content: "";
+    position: absolute;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #45f3ff , #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    25%
+    {
+        transform: rotate(360deg);
+    }
+    50%
+    {
+        transform: rotate(90deg);
+    }
+    75%
+    {
+        transform: rotate(20deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+/* <!--#################### { Anemation-End-Hire } ##################### --> */
+
+/* .------------------------------------------{ From-graph } */
+.from{
+    padding-top: 6%;
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: black;
+    z-index: 10;
+}
+.graph {
+    padding: 2%;
+    text-align: center;
+    color: #00FFFF;
+}
+.Website:hover{
+    transform: scale(0.80);
+    background-color: #fff;
+    padding: 18px ;
+}
+.Website{
+    transition: all .3s linear;
+}
+.website-p-tag:hover{
+    transform: scale(0.86);
+    background-color: rgb(24, 23, 23);
+    padding: 18px ;
+}
+.website-p-tag{
+    transition: all .2s linear;
+}
+/* .------------------------------------------{ Market-img } */
+.market-img{
+    margin-top: 3%;
+    width: 84%;
+    height: 84%;
+    text-align: center;
+  }
+  .market-img:hover{
+    transform: scale(1.2);
+  }
+  .market-img{
+    transition: all 0.3s linear;
+  }
+/* <!--#################### { Marketing-Gig-box-End-Hire } ##################### --> */
