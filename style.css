@@ -367,3 +367,26 @@ body{
     font-size: 30px;
     color: #45f3ff;
 }
+
+/* <!--################################## { My-Work-Experince } ############################### --> */
+.my-work-icon{
+    margin-top: -1%;
+    padding-left: 6%;
+    transition: .4s linear;
+}
+.my-work-icon:hover{
+    transform: scale(1.3);
+}
+.My-Work-Experince{
+    margin-top: -13%;
+    font-size: 34px;
+    font-family: sans-serif;
+    color: #00FFFF;
+}
+.My-Work-Experince:hover{
+    transform: scale(1.3);
+    color: #fff;
+}
+.My-Work-Experince{
+    transition: .4s linear;
+}
