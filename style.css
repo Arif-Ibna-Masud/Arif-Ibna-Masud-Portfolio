@@ -1,0 +1,252 @@
+
+body{
+    height: 100vh; 
+    background-color: #000000;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* <!--################################## {webkit-scrollba} ############################### --> */
+::-webkit-scrollbar{
+    width: 25px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #999999;
+    border-radius: 50px;
+    border: 8px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #00BFFF;
+    transform: scale(0.90);
+}
+::-webkit-scrollbar-thumb{
+    transition: all 5s linear;
+}
+
+
+/* <!--################################## {webkit-scrollba-End} ############################### --> */
+.arif-icon:hover{
+    transform: scale(1.3);
+}
+.arif-icon{
+    transition: .4s linear;
+    margin-left: 12%;
+}
+.border-re{
+    border-radius: 3px;
+}
+.h{
+    height: 80px;
+}
+.font-size{
+    padding: 8px 60px; 
+    font-size: 19px;
+}
+.text-size {
+    font-size: 20px;
+    text-align: center;
+}
+.about{
+    font-size: 19px;
+    padding: 4px 60px;
+    border-radius: 3px;
+}
+.about:active,.about:hover {
+    background: rgb(41, 141, 255);
+}
+.about:hover{
+    transform: scale(0.85);
+}
+.about{
+    transition: all .4s linear;
+}
+
+/* <!--################################## {fa-mug-hot} ############################### --> */
+.fa-mug-hot{
+    font-size: 33px;
+}
+.fa-mug-hot:active,.fa-mug-hot:hover {
+    background-color: orchid;
+    transition: .4s;
+    border-radius: 30px;
+    padding: 7px 7px;
+}
+
+/* <!--################################## {Sing-Up-Box} ############################### --> */
+.width {
+    width: 800%;
+}
+.singup-box{
+    position: relative;
+    width: 30%;
+    height: 420px;
+    background: #000000;
+    border: 8px;
+    overflow: hidden;
+}
+.singup-box::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, aqua , aqua);
+    transform-origin: bottom right;
+    animation: animate 10s linear infinite;
+}
+.singup-box::after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, aqua , aqua);
+    transform-origin: bottom right;
+    animation: animate 10s linear infinite;
+    animation-delay: -5s;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(90deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+/* <!--################################## {From-SingUp} ############################### --> */
+.form-singup
+{
+    position: absolute;
+    inset: 3px;
+    background: #000000;
+    z-index: 10;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.form-singup h3 {
+    color: #45f3ff;
+    font-weight: 500px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+/* .-------------------------------------------{dark-inputBox} */
+.dark-inputBox
+{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.dark-inputBox .input-mail
+{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #000000;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.dark-inputBox .span-nnn
+{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+/* .--------------------------------------{dark-inputBox .i-tag} */
+.dark-inputBox .input-mail:valid ~ .span-nnn,
+.dark-inputBox .input-mail:focus ~ .span-nnn
+
+{
+    color: #45f3ff;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+.dark-inputBox .i-tag
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+.dark-inputBox .input-mail:valid ~ .i-tag,
+.dark-inputBox .input-mail:focus ~ .i-tag
+{
+    height: 44px;
+}
+
+/* .----------------------------------------------{othrs-links} */
+.othrs-links
+{
+    display: flex;
+    justify-content: space-between;
+}
+.othrs-links .a-tag
+{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: white;
+    text-decoration: none;
+}
+.othrs-links .a-tag :hover,
+.othrs-links .a-tag :nth-child(2)
+{
+    color: #45f3ff;
+}
+
+/* .--------------------------------------{.input-mail[type="submit"]} */
+.input-mail[type="submit"]
+{
+    border: none;
+    outline: none;
+    background: #45f3ff;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.input-mail[type="submit"]:active
+{
+    opacity: 0.8;
+}
+/* <!--############################# {From-SingUp-End Hire} ############################# --> */
+.search-btn:hover{
+    transform: scale(0.90);
+}
+.search-btn{
+    transition: .4s linear;
+}
+
+/* <!--################################## { Navbar-header-End-Hire } ############################### --> */
