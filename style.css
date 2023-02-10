@@ -308,3 +308,17 @@ body{
 .name-text{
     transition: all .4s linear;
 }
+
+/* <!--################################## {Welcome-Hire} ############################### --> */
+.welcome-hire-size{
+    font-size: 46px;
+    color: white;
+    font-family: sans-serif;
+}
+.welcome-hire-size:hover{
+    transform: scale(1.2);
+    color: #00FFFF;
+}
+.welcome-hire-size{
+    transition: .3s linear;
+}
